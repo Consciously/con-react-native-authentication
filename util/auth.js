@@ -16,9 +16,9 @@ const authenticate = async (mode, email, password) => {
 };
 
 export const createUser = (email, password) => {
-	return await authenticate('signup', email, password);
+	return authenticate('signup', email, password);
 };
 
 export const login = (email, password) => {
-	return await authenticate('signInWithPassword', email, password);
+	return authenticate('signInWithPassword', email, password);
 };
